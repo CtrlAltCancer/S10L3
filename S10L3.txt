@@ -1,0 +1,8 @@
+0x00001141 <+8>:     mov    EAX,0x20             // Sposta il valore esadecimale 0x20 (32 in decimale) nel registro EAX.
+0x00001148 <+15>:    mov    EDX,0x38             // Sposta il valore esadecimale 0x38 (56 in decimale) nel registro EDX.
+0x00001155 <+28>:    add    EAX,EDX              // Aggiunge il contenuto del registro EDX al registro EAX e memorizza il risultato in EAX. EAX conterrà il risultato (32+56), ovvero 88 (0x58 in hexa).
+0x00001157 <+30>:    mov    EBP, EAX             // Copia il valore contenuto nel registro EAX nel registro EBP.
+0x0000115a <+33>:    cmp    EBP,0xa              // confronta il valore contenuto in EBP (88) con il valore hexa 0xA (10 decimale).
+0x0000115e <+37>:    jge    0x1176 <main+61>     // Istruzione condizionale: Se il risultato del confronto precedente (che è "maggiore o uguale") è vero, il controllo del programma salterà all'indirizzo 0x00001176 (non visibile). In caso contrario, continua con l'istruzione successiva.
+0x0000116a <+49>:    mov    eax,0x0              // Assegna il valore hexa 0x0 (0 decimale) al registro EAX.
+0x0000116f <+54>:    call   0x1030 <printf@plt>  // Chiama una funzione. La funzione chiamata è printf, situata in 0x00001030 (non visibile)
